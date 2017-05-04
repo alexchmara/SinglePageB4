@@ -1,8 +1,15 @@
 body{
 font-family: 'Love Ya Like A Sister', cursive;
+background-color: #FFF;
 }
 
 .bg-2{
   background-color: #A52A2A;
   color: #FFF;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.sticky-top{
+  opacity: 0.9;
 }

@@ -1,3 +1,3 @@
 $(function () {
- console.log('works')
+ console.log('it works')
 });
