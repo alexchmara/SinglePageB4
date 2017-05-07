@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="master.css">
     <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
@@ -60,8 +60,30 @@
                 <h4>PHP</h4>
             </div>
         </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <i class="fa fa-mobile fa-5x slideanim slide" aria-hidden="true"></i>
+                <h4>RWD</h4>
+            </div>
+            <div class="col-lg-3">
+                <i class="fa fa-ravelry fa-5x slideanim slide" aria-hidden="true"></i>
+                <h4>Bootstrap</h4>
+            </div>
+            <div class="col-lg-3">
+                <i class="fa fa-grav fa-5x slideanim slide" aria-hidden="true"></i>
+                <h4>Ajax</h4>
+            </div>
+            <div class="col-lg-3">
+                <i class="fa fa-github-alt fa-5x slideanim slide" aria-hidden="true"></i>
+                <h4>GIT</h4>
+            </div>
+        </div>
     </div>
-    <div id="map" style="height:400px;width:100%;"></div>
+    <div class="container-fluid text-center">
+      <h2>Contact</h2>
+        <div id="map" style="height:400px;width:100%;"></div>
+    </div>
+
     <script>
         function initMap() {
             var poznan = {
@@ -76,7 +98,7 @@
                 scrollwheel: false,
                 draggable: false,
                 mapTypeId:google.maps.MapTypeId.ROADMAP,
-  
+
             });
             var marker = new google.maps.Marker({
                 position: poznan,
