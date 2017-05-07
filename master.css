@@ -46,3 +46,6 @@ background-color: #FAF0E6;
     -webkit-transform: translateY(0%);
   }
 }
+#map{
+  filter: grayscale(100%);
+}
