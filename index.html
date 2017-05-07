@@ -42,12 +42,45 @@
 
     <div class="container-fluid bg-3 text-center">
         <h2>Technologies</h2>
-        <div class="col-md-3">
-            <i class="fa fa-address-book-o fa-5x" aria-hidden="true"></i>
-            <h4>HTML</h4>
+        <div class="row">
+            <div class="col-lg-3">
+                <i class="fa fa-cubes fa-5x slideanim slide" aria-hidden="true"></i>
+                <h4>HTML/CSS</h4>
+            </div>
+            <div class="col-lg-3">
+                <i class="fa fa-bomb fa-5x slideanim slide" aria-hidden="true"></i>
+                <h4>Javascript</h4>
+            </div>
+            <div class="col-lg-3">
+                <i class="fa fa-code fa-5x slideanim slide" aria-hidden="true"></i>
+                <h4>jQuery</h4>
+            </div>
+            <div class="col-lg-3">
+                <i class="fa fa-certificate fa-5x slideanim slide" aria-hidden="true"></i>
+                <h4>PHP</h4>
+            </div>
         </div>
     </div>
+    <div id="map" style="height:400px;width:100%;"></div>
+    <script>
+        function initMap() {
+            var poznan = {
+                lat: 52.413352,
+                lng: 16.929544
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: poznan
+            });
+            var marker = new google.maps.Marker({
+                position: poznan,
+                map: map
+            });
 
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLnjnXGLljcGLzAo38phNKIVYzp0D3GqY&callback=initMap"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
